@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Private Room</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/png;base64,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"
+    />
+
+    <style>
+      body{
+        text-transform:capitalize
+      };
+      .input-glow:focus {
+        border: 2px solid red;
+        outline: none;
+        color: black;
+        background-color: transparent;
+      }
+      .starry-bg {
+        background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen starry-bg">
+    <div class="p-8 h-full max-w-md w-full">
+      <h1 class="text-center my-2" >share room link to your friends to chat </h1>
+      <h1 class="text-center my-5" >Thanks to choose us! </h1>
+      <h1 class="text-3xl text-black text-center mb-6">Create Your Room</h1>
+      <form class="register-form" action="/register" method="POST">
+        <div class="mb-4">
+          <label for="room-id" class="block text-xl text-black mb-2"
+            >Create Room Name</label
+          >
+          <input
+            type="text"
+            id="room-id"
+            name="username"
+            placeholder="Enter room Name"
+            class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg input-glow focus:ring-2 focus:ring-white"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block text-xl text-black mb-2"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg input-glow focus:ring-2 focus:ring-white"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-red-500 text-gray-200 py-2 rounded-lg hover:bg-green-400 hover:text-black transition duration-300 ease-in-out"
+        >
+          Enter Room
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
